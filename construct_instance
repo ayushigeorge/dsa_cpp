@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+class instance{
+	int a,b,c,d,e,f;
+	public:
+		instance(int i, int j, int k, int l,int m, int n);
+		instance();
+		void show(){
+			cout<<" The date is: "<<a<<"/"<<b<<"/"<<c<<endl;
+			cout<<"The time is : "<<d<<"/"<<e<<"/"<<f<<endl;	
+		}
+};
+
+instance::instance(){
+	cout<<"Date: ";
+	cin>>a;
+	cout<<"Month: ";
+	cin>>b;
+	cout<<"Year : ";
+	cin>>c;
+	cout<<"Day: ";
+	cin>>d;
+	cout<<"Minute: ";
+	cin>>e;
+	cout<<"Second: ";
+	cin>>f;
+}
+instance::instance(int i, int j, int k, int l, int m, int n){
+	a=i, b=j, c=k, d=l, e=l, f=n;
+}
+int main(){
+	instance x(31,10,2001,7,01,45);
+	x.show();
+	instance y;
+	y.show();
+	return 0;
+}
