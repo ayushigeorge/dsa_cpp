@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+class num{
+	int a,c;
+	float b;
+	public : 
+		num( int i, float j, char k);
+		num(int i, float j);
+		num();
+		void show(){
+			cout<<"Numbers: ";
+			cout<<a<<"\n"<<b<<"\n"<<c;
+		}
+};
+num::num(int i, float j, char k){
+	a=i;
+	b=j;
+	c=k;
+	cout<<"Constructor With 3 arguments called: "<<endl;
+}
+num::num(int i, float j){
+	a=i;
+	b=j;
+	cout<<"Constructor with 2 arguments called: "<< endl;
+}
+num::num(void){
+	a=0; b=0;c=0;
+	cout<<"Constructor with No arguments called: "<<endl;
+}
+
+int main() {
+class num x(77,8.8,'k');
+x.show();
+class num y(55, 77.89);
+y.show();
+class num z;
+z.show();
+return 0;
+}
