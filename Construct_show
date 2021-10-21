@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+class num{
+	int a,b,c;
+	
+	public : 
+		num();
+		void show(){
+			cout<<"Numbers: ";
+			cout<<a<<"\n"<<b<<"\n"<<c;
+		}
+};
+num::num(void){
+	cout<<"Constructor show: "<<endl;
+	a=7; b=9;c=8;
+}
+int main() {
+num x;
+x. show();
+return 0;
+}
